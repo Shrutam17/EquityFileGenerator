@@ -20,7 +20,23 @@ def update_equity_file(df_equity, df_trade, df_block):
                     'BuySell': trade_row['BuySell'],
                     'Symbol': block_row['Symbol'],
                     'Price': block_row['Price'],
-                    'Qty': block_row['Qty'] * trade_row['No. Of Blocks']
+                    'Qty': block_row['Qty'] * trade_row['No. Of Blocks'],
+                    'Exchange':'NseCm',
+                    'Series':'EQ',
+                    'Protection':'1',
+                    'ProCli':'Cli',
+                    'Book':'RL',
+                    'Trigger':'0',
+                    'DiscQty':'0',
+                    'OrderType':'Day',
+                    'Errors':'None',
+                    'ValidityDays':'0',
+                    'Product':trade_row['Product'],
+                    'Special':'None',
+                    'ExitTrigger':'0',
+                    'ExitPrice':'0',
+                    'TargetPrice':'0',
+                    
                 }
                 rows_to_add.append(new_row)
 
