@@ -35,6 +35,7 @@ def update_equity_file(df_equity, df_trade, df_block):
                     'ExitTrigger':'0',
                     'ExitPrice':'0',
                     'TargetPrice':'0',
+                    'OrderType':'Day',
                     
                 }
                 rows_to_add.append(new_row)
